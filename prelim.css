@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+section {
+    padding: 2rem 0;
+}
+.project-details {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 80%;
+}
+.project-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.content-pics {
+    text-align: center;
+    
+}
+
+.content-pics img {
+    width: 60%;
+    border: 2px solid black;
+}
+
+.back-link {
+    margin: 1rem 0;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.photo-container{
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.photo-grid img {
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 550px;
+    height: 250px;
+}
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+.photo-grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.photo-grid_2 img {
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    .photo-grid_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+nav .linkedin-link img {
+    width: 24px; /* Small size for LinkedIn logo */
+    height: 24px; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+}
+
+.photo-grid-OML {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.photo-grid-OML img {
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 550px;
+    height: 250px;
+}

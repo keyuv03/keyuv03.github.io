@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental Aerodynamics Diamond Airfoil Wing Test</title>
+    <link rel="stylesheet" href="315_style.css">
+</head>
+<body>
+<header>
+    <h1>Experimental Aerodynamics Lab</h1>
+    <nav>
+        <div class="nav-links">
+            <a href="resume.pdf" target="_blank">Resume</a>
+           <a href="https://www.linkedin.com/in/joshbeltrame" target="_blank" class="linkedin-link">
+                <img src="linkedinLogo.png" alt="LinkedIn" height="200" width="200"></a>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <section class="project-details">
+        <a href="index.html" class="back-link">Back to Portfolio</a>
+        <h2>Experimental Aerodynamics Diamond Airfoil Wing Test</h2>
+        <img src="testing.jpg" alt="Project Image">
+        <br></br>
+        <p><strong>Background:</strong> 
+            <br></br>
+            For my Experimental Aerodynamics Lab, we were given the task to do a “DIY Lab” that served as a final project. 
+            We had to plan, design, setup, perform and analyze an experiment using a low-speed wind tunnel. 
+            My idea was to create a wing that has a diamond airfoil, then test to see the lift and drag of the wing.
+            <br></br>
+            Our wind tunnel was only very low speed, with a max speed of ~  25m/s (~56mph) or ~ mach 0.07 at MSL conditions. 
+            The vehicles using this airfoil fly at much greater speeds, usually supersonic, as diamond airfoils are beneficial for using the shocks generated at the corners to create pressure differentials and thus lift. 
+            The idea stemmed from the goal of seeing just how inefficient these airfoils truly were at low subsonic speeds.
+            <br></br>
+            This was the idea that my group selected, and I worked as the lead on the project. From the get-go, we defined a very clear workflow:
+            <ol type="1">
+                <li>Calculations</li>
+                <li>Design</li>
+                <li>Simulate</li>
+                <li>Procurement</li>
+                <li>Manufacture</li>
+                <li>Validate</li>
+                <li>Test</li>
+                <li>Analyze</li>
+                <li>Report</li>
+            </ol>
+            I directly worked on performing the preliminary calculations, designing the wing, simulating to ensure the constraints were met, procuring all of the necessary supplies, and the manufacturing of the wing. 
+            I aided in all of the steps, however I primarily worked on the aforementioned ones.
+        </p>
+        <br></br>
+        <p>
+            <strong>Objectives:</strong>
+        
+            <ul>
+                <li>Design a wing that exceeds the required strength requirements to test, ensuring the wing stays in on piece while tested</li>
+                <li>Manufacture the wing that was designed</li>
+                <li>Successfully test the wing in the low-speed wind tunnel</li>
+                <li>Analyze the lift and drag of the wing to evaluate its effectiveness or ineffectiveness at low speeds.</li>
+            </ul>
+        </p>
+        <br></br>
+        <p>
+            <strong>Preliminary Calculations:</strong> 
+            <br></br>
+            Before any design work could begin, I had to obtain the sizing of the wing. 
+            Specifically, the half angle, chord size and span length, so that it stayed within all of the given constraints. 
+            Additionally, I had to determine a test envelope that kept aerodynamic coefficients within the constraints. 
+            This was done using an iterative process of hand calculations and an Excel Spreadsheet using Thin Airfoil Theory. 
+            The test envelope was set to test the wing at 20 m/s, varying the angle of attack from -2 deg to 14 deg in increments of 4 degrees, and adding in a 0-degree angle of attack test. 
+            The half angle size was set to 15 degrees, with a chord length of 0.15m and a wingspan of 0.4m.
+        
+        </p>
+        <br></br>
+        <p>
+            <strong>Design/Simulate/Procurement:</strong> 
+            <br></br>
+            These three stages were done back and forth. 
+            The wing design was all done with CATIA v5 using Generative Surface Design (GSD). 
+            To ensure that the wing would not fall apart, I iteratively changed the sizing of the main spar. 
+            I simulated this in NX FEMAP, assuming a constant loading over the main spar.
+            While this would not be aerodynamically accurate, as the lift distribution would be less at the tips, it would be fine for the purposes as it would provide more drastic results, and if they were adequate, then it would be ok. 
+            The spar selection was done depending on what could be found online available to order. Thus, all of these go hand in hand and were done together. 
+            If one spar would not suffice, then I had to find another one available online or in a store, then simulate to see if it would hold or not. 
+            Then update the design and shift placement of spar(s) as needed. 
+            This wing was made far stronger than needed, but this was done purposefully to ensure that it held up in the wind tunnel. 
+            The final design is shown below.
+            <div class="content-pics">
+                <img src="wingIsoCAD.png" alt="Project Image">
+                Isometric view of the final design of the wing.
+                <br></br>
+                
+                <img src="mainSparMaxDeflection.png" alt="Project Image">
+                Maximum deflection of the main spar.
+                <br></br>
+                
+                <img src="mainSparMaxLoading.png" alt="Project Image">
+                Maximum stresses on the main spar.
+            </div>          
+           
+        
+        </p>
+        <p>
+            <strong>Manufacturing:</strong> 
+            <br></br>
+            After having designed and acquired all of the required materials, it needed to be built and assembled. 
+            This process was straightforward. First, we placed all of the ribs onto the main spar, epoxying them into place and making epoxy fillets.
+            Then we inserted the forward and aft spars and followed the same procedure using epoxy to join and then create fillets. 
+            After this, we cut the skin panels and put them onto the wing. This was also done with epoxy to maximize the strength. 
+            However, after having done this, I believe it would have been a better decision to fuse the panels onto the ribs with a soldering iron, as they were 3D printed with PLA and the epoxy was not as effective as I had thought. 
+            After epoxying it all, we applied a layer of duct tape around the entire wing in an effort to decrease surface roughness and better hold everything together. 
+            The final product can be seen below.
+        
+        </p>
+        <br></br>
+        <div class="photo-grid_2">
+            <img src="top_Wing_before.jpg">
+            <img src="side_wing_before.jpg">
+        </div>   
+        <br></br>
+        <p>
+            <strong>Results:</strong>
+            <br></br>
+            The results were as expected. 
+            The lift and drag were rather sporadic. 
+            The lift following a transformed quadratic trend, while the drag followed a cubic trend. 
+            The drag polar looked as it should, following a quadratic trend. 
+            Lastly, the lift to drag ratio plotted against the angle of attack follows a transformed quadratic trend, similar to that of the lift vs angle of attack.
+            <br></br>
+            While these results are not great, this was to be expected. 
+            This airfoil is not meant to effectively generate or produce lift while at low speeds. 
+            Typically, aircraft will just power through these conditions to get the airfoils to better operating conditions. 
+        </p>
+        <br></br>
+        <div class="photo-grid">
+            <img src="CLvsAOA.png">
+            <img src="CDvsAOA.png">
+            <img src="DragPolar.png">
+            <img src="L_DvsAOA.png">
+        </div>       
+        <p>
+            <br></br>
+            <strong>Conclusions:</strong> 
+            <br></br>
+            Throughout this entire experiment, a lot was learned. 
+            Specifically, about the design process and iteration. 
+            I spent countless hours going back and forth, researching different materials and shapes for different spars, and then simulating them and then adding everything into the CAD design. 
+            Additionally, I learned a lot while doing the manufacturing.
+            pecifically, tolerancing when 3D printing and the need for this, as well as the importance to test material adhesion before assembly.
+            <br></br>
+            There are a few things that I think could have been done better.
+            As mentioned before, I think that the skin panels should have been attached using fusion with a soldering iron. 
+            I also think that a better material could have been chosen for the skin, such as monokote.
+            This wasn’t used as it would have had a higher cost, as we would have needed an iron and the material, as well as it wasn’t available in the time we needed it. 
+            Additionally, this could have all raised adhesion problems with the 3D printed ribs.
+            
+        
+        </p>
+        <br></br>
+    </section>
+    
+</div>
+</body>
+</html>
