@@ -25,6 +25,7 @@ nav a {
     margin: auto;
     overflow: hidden;
 }
+
 section {
     padding: 2rem 0;
 }
@@ -75,7 +76,8 @@ nav .linkedin-link img {
     grid-template-columns: 50% 50%; /* Two columns, each 50% */
 
   }
-  
+
+
   .image-grid a {
     display: block;
   }
@@ -100,6 +102,33 @@ nav .linkedin-link img {
     text-align: center;
 
   }
+  
+  .container2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image-grid2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%; /* Two columns */
+}
+
+.grid-item2 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
   .grid-item img {
     height: auto; 
     width: auto; 
